@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Tabelas</title>
+</head>
+<body>
+
+    <!--Alinha o texto nas celulas ou tabelas para o lado que eu escolher (como se fosse um text-align center, left ou right)-->
+    <center><h1>ALINHAMENTO DE TABELA E CELULAS</h1></center>
+    <table border="1" align="center">
+        <td> Primeira Celula</td>
+        <td> Segunda Celula</td>
+        <td> Terceira Celula</td>
+
+        <tr>
+            <td align="left">Esquerda</td>
+            <td align="center">Centro</td>
+            <td align="right">Direita</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!--Distância entre a celula e as bordas da tabela-->
+    <center><h1>USO DO CELLSPACING</h1></center> 
+    <table border="1" width="80%" cellspacing="24" align="center">
+        <td width="33%" align="center"> Coluna 1</td>
+        <td width="33%" align="center"> Coluna 2</td>
+        <td width="33%" align="center"> Coluna 3</td>
+    </table>
+
+    <br><br>
+
+    <!--Distância entre o Texto e as bordas da celula-->
+    <center><h1>USO DO CELLPADDING</h1></center>
+    <table border="1" width="80%" cellpadding="24" align="center">
+        <td width="25%" align="center"> Aluno</td>
+        <td width="30%" align="center"> Professor</td>
+        <td width="45%" align="center"> Tec. Desenv</td>
+    </table>
+
+    <br><br>
+
+    <!--Número de linhas que uma célula vai ocupar ou vai ser mesclada-->
+    <center><h1>USO DO ROWSPAN</h1></center>
+    <table border="3" width="90%" cellpadding="7" align="center">
+        <tr>
+        <td width="16%" rowspan="3"> 3 Linhas</td>
+        <td width="16%" align="center"> L1 Coluna 1</td>
+        <td width="16%" align="center"> L1 Coluna 2</td>
+        <td width="17%" align="center"> L1 Coluna 3</td>
+        <td width="17%" align="center"> L1 Coluna 4</td>
+        </tr>
+
+        <tr>
+            <td width="16%" align="center"> L2 Coluna 2</td>
+            <td width="16%" align="center"> L2 Coluna 3</td>
+            <td width="17%" align="center"> L2 Coluna 4</td>
+            <td width="17%" align="center"> L2 Coluna 5</td>
+        </tr>
+
+        <tr>
+            <td width="16%" align="center"> L3 Coluna 2</td>
+            <td width="16%" align="center"> L3 Coluna 3</td>
+            <td width="17%" align="center"> L3 Coluna 4</td>
+            <td width="17%" align="center"> L3 Coluna 5</td>
+        </tr>
+    </table>
+    </table>
+
+    <br><br>
+    
+    <!--Número de colunas que uma célula vai ocupar ou vai ser mesclada-->
+    <center><h1>USO DO COLSPAN</h1></center>
+    <table border="3" width="80%" cellpadding="7" align="center">
+        <tr>
+        <td width="24%" colspan="3"> Célula com 3 Colunas</td>
+        <td width="20%" align="center"> L1 Coluna 4</td>
+        <td width="20%" align="center"> L1 Coluna 5</td>
+ 
+        </tr>
+
+        <tr>
+            <td width="16%" bgcolor="green"> L2 Coluna 2</td>
+            <td width="16%" bgcolor="blue"> L2 Coluna 3</td>
+            <td width="17%" bgcolor="yellow"> L2 Coluna 4</td>
+            <td width="24%" colspan="2" bgcolor="red"> Celula com 2 colunas</td>
+        </tr>
+    </table>
+    <br><br><address align="center">
+        Luís Fernando / Estudante / Técnico Desenvolvimento de Sistemas
+    </address>
+</body>
+</html>
