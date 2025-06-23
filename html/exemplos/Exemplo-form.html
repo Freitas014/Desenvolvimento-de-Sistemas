@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Form tipo text -->
+    <form method="post" action="#">
+        Qual seu primeiro nome?
+        <input type="text" NAME="primeiro_nome" value="Carlos" size="10" maxlength="15">
+    </form>
+    <br><br>
+    <!-- Form tipo senha -->
+
+    <form method="post" action="#">
+        Informe sua senha de acesso (8 caracteres):
+        <input type="password" value="xpto" name="sua_senha" size="8" maxlength="8">
+        </form>
+        <br><br>
+
+        <form method="post" action="#">
+        Você não pode visualizar nada aqui embaixo.
+        <input type="hidden" name="nome_oculto" value="form12">
+        </form>
+        <br><br>
+
+        <form method="post" action="#">
+        Por favor, escreva aqui suas sugestçoes, dúvidas e críticas:<br>
+        <textarea name="critica" rows="3" cols="40">
+Gostaria de obter mais informações sobre este servidor. Grato.
+        </textarea>
+    </form>
+    <br><br>
+
+    <!-- Select&Option -->
+    <form method="post" action="#">
+        Onde você pretende fazer turismo nas férias?
+        <select name="lugares_para_ver">
+            <option>Fortaleza🚬</option>
+            <option value="sul">Floranópolis🏙️</option>
+            <option>Rio de Janeiro🔫</option>
+            <option selected>Brasília💰</option>
+            <option value="Amazonia">Manaus🌼</option>
+        </select>
+    </form>
+    <br><br>
+
+    <!-- DropDown-List -->
+    <form method="post" action="#">
+        Que facilidades de acomodação você deseja?<br>
+        <select name="opicional" multipe size="5">
+            <option>Televisão</option>
+            <option value="casal" selected>Cama de Casal</option>
+            <option>Ar Condicionado</option>
+            <option>Fax</option>
+            <option selected>Modem V.34</option>
+            <option>Sauna</option>
+            <option>avanderia</option>
+            <option>Frigo-Bar</option>
+        </select>
+    </form>
+
+    <br><br>
+
+    <!-- Checkbox -->
+    <form method="post" action="#">
+        <input type="checkbox" name="veiculo1" value="Bike"> Eu tenho uma bicicleta<br>
+        <input type="checkbox" name="veiculo2" value="Carro"> Eu tenho um carro <br>
+        <input type="checkbox" name="veiculo3" value="Barco"> Eu tenho um barco <br>
+        <input type="submit" value="submit">
+    </form>
+    <br><br>
+
+    <!-- Radio -->
+        <p>Por favor selecione sue gênero:</p>
+        <input type="radio" name="genero" value="Homi"> Homi<br>
+        <input type="radio" name="genero" value="Muié"> Muié<br>
+        <input type="radio" name="genero" value="Gambiarra do djabo"> Gambiarra do Djabo <br>
+
+        <p>Por favor selecione sue gênero:</p>
+        <input type="radio" name="idade" value="30"> 0 - 30<br>
+        <input type="radio" name="idade" value="60"> 31 - 60<br>
+        <input type="radio" name="idade" value="100">61 - 100<br>
+
+        <input type="submit" value="submit">
+    </form>
+    <br><br><br>
+
+    <!-- Reset e Submit -->
+    <form method="post" action="#">
+        <label>Email: </label>
+        <input type="email" name="email"><br><br>
+        <label>Pin:</label>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+    </form>
+    <br><br>
+    <address align="center">
+        Luís Fernando / Estudante / Técnico Desenvolvimento de Sistemas
+    </address>
+</body>
+
+</html>
