@@ -1,0 +1,1 @@
+Imagem só aparece se descomprimir o arquivo
