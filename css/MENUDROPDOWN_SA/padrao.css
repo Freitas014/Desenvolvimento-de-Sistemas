@@ -52,6 +52,10 @@ body {
     color: var(--cor-primaria);
     padding-top:5%;
 }
+/* td .medida1, .medida2 {
+    display: flex
+    align-items: center
+    padding: 5px; */ /*NAO DEU BOM*/
 
 #button-cadastrar, #button-reset {
     background-color: var(--cor-primaria);
