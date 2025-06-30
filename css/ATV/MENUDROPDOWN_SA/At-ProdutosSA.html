@@ -1,0 +1,117 @@
+<DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atv - Produtos SA</title>
+        <link rel="stylesheet" href="padrao.css">
+        <link rel="icon" href="img/icon.png" type="image/png">
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">DropDown</a>
+                <div class="dropdown-content">
+                    <a href="formFornecedor.html">Fornecedor</a>
+                    <a href="form.html">Funcionário</a>
+                    <a href="d5_CSS.html">Cliente</a> <!--MICAEL FALTOU-->
+                    <a href="#">Luís Fernando</a>
+                </div>
+            </li>
+        </ul>  
+        <center>
+            <form class="form" action="#" method="post">
+                <br><br><h1>Cadastro de Produtos</h1>
+                <p>Preencha os campos abaixo para cadastrar um novo produto.</p><br>
+                <table class="table" width="350px" height="450px">
+                    <tr>
+                        <td class="cabecario" rowspan="2">
+                            <center><img src="img/icon.png" width="60px" height="49px;"></center>
+                        </td>
+                        <td class="cabecario2" colspan="3">
+                            <center>Cadastro de Produtos</center><br>
+                        </td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>Nome: </center>
+                        </td>
+                        <td>
+                            <center><input class="nome" type="text" placeholder="Insira o Nome do produto"></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>Categoria:</center>
+                        </td>
+                        <td colspan="2">
+                            <center><select class="select">
+                                    <option>Insumo</option>
+                                    <option>Produto</option>
+                                </select></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>Valor:</center>
+                        </td>
+                        <td>
+                            <center><input class="number" type="number" step="0.01" placeholder="Ex: 10,00"></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>Medida:</center>
+                        </td>
+                        <td>
+                    <center><input class="medida1" type="radio" name="medida">UN
+                            <input class="medida2" type="radio" name="medida">KG</center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>Quantidade:</center>
+                        </td>
+                        <td colspan="2">
+                            <center><input class="quantidade" type="number" placeholder="Insira a quantidade"></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>Validade:</center>
+                        </td>
+                        <td colspan="2">
+                            <center><input class="validade" type="date"></center>
+                        </td>
+                        <tr>
+                            <td>
+                                <center>Fornecedor:</center>
+                            </td>
+                            <td colspan="2">
+                                <center><input class="fornecedor" type="text" placeholder="Insiro o nome do fornecedor"></center>
+                            </td>
+                </table>
+                <br><br>
+                <button id=button-reset type="reset">Limpar</button>
+                <button id="button-cadastrar" type="submit">Cadastrar</button>
+            </form>
+        </center>
+
+        <br><br>
+        <center>
+            <address>
+                Luís Fernando / Estudante / Técnico Desenvolvimento de Sistemas
+            </address>
+        </center>
+    </body>
+
+
+
+
+
+
+    </html>

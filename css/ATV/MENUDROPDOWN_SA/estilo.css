@@ -1,0 +1,82 @@
+body{
+    background-color:rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input, select, ::placeholder{
+    background-color: rgb(191, 252, 206);
+    border-radius: 12px;
+    border-color: rgb(96, 224, 135);
+    padding: 4px 10px;
+    color: rebeccapurple;
+}
+
+table{
+    background-color: rgb(0, 255, 179);
+    border-radius: 16px;
+}
+
+address{
+    color: red;
+    position: relative;
+    top: 50px;
+}
+ul {
+    list-style-type: none;/* Tira as bolinhas padrão */
+    margin: 0px;/* Remove espaçamento */
+    padding: 0px;/* Remove espaçamento */
+    overflow: hidden;/* Evita que o conteúdo ultrapasse o tamanho da caixa */
+    background-color: rgb(51, 51, 51);
+/* Define a cor de fundo */
+}
+
+li {
+    float: left;
+    /* Os itens vão ficar um do lado do outro, tipo menu horizontal */
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover,
+.dropbtn:hover {
+    background-color: rgb(0, 195, 255);
+}
+
+li .dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 195, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(117, 126, 255);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+/*FIZ NA PRESSA E POR ISSO NAO ESTA PARECIDO COM MEU SISTEMA!!

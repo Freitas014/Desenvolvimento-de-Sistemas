@@ -1,0 +1,148 @@
+/* Variáveis para fácil customização */
+:root {
+    --cor-primaria: #f3a853;
+    --cor-secundaria: #967345;
+    --cor-fundo: #fff;
+    --cor-texto: #222;
+    --cor-botao-cancelar: #fff;
+    --cor-botao-cancelar-borda: #f3a853;
+    --cor-link: #967345;
+    --radius: 16px;
+    --sombra: 0 0px 10px #f3a85375;
+    --fonte-principal: 'Poppins', sans-serif;
+    --espaco-padrao: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+body {
+    background: url('https://i.pinimg.com/1200x/46/73/ee/4673eeb5fe44425b7dca8214cf75bc75.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 1.1em;
+    color: var(--cor-texto);
+    padding-left: 65px;
+}
+.form{
+    font-family: Verdana;
+}
+.table{
+    background: var(--cor-fundo);
+    border-radius: 2%;
+
+}
+.nome, .number, .quantidade, .select, .validade, .fornecedor{
+    width: 210px;
+}
+
+.cabecario, .cabecario2{
+    background-color: var(--cor-fundo);
+    font-family: "verdana";
+    font-size: 20px;
+    color: var(--cor-primaria);
+    padding-top:5%;
+}
+/* td .medida1, .medida2 {
+    display: flex
+    align-items: center
+    padding: 5px; */ /*NAO DEU BOM*/
+
+#button-cadastrar, #button-reset {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+#button-cadastrar:hover{
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+#button-reset:hover{
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+
+input,select{
+    border: 1px solid var(--cor-secundaria);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 1em;
+    background: #faf8f6;
+    transition: border 0.2s;
+}
+ul {
+    list-style-type: none;/* Tira as bolinhas padrão */
+    margin-left: -5.1%;/* Remove espaçamento */
+    padding: 0px;/* Remove espaçamento */
+    width: 105.1%;
+    overflow: hidden;/* Evita que o conteúdo ultrapasse o tamanho da caixa */
+    background-color: black;/* Define a cor de fundo */
+}
+
+li {
+    float: left;
+    /* Os itens vão ficar um do lado do outro, tipo menu horizontal */
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover,
+.dropbtn:hover {
+    background-color: rgba(5, 25, 209, 0.623);
+}
+
+li .dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(60, 89, 255, 0.548);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(0, 255, 255);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
