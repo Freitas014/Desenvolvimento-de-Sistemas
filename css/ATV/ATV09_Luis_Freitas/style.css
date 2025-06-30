@@ -1,0 +1,10 @@
+.poema{
+    font-size: 20px;
+    color: blue;
+}
+.img{
+    position: absolute;
+    top: 48%;
+    left: 30%;
+    min-height: 300px;
+}
