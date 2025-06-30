@@ -1,0 +1,45 @@
+
+        header {
+            background-color: #f9f904;
+            width: 99.7%;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border:#000000 2px solid;
+            
+        }
+        body {
+            background-color: #faa37b;
+        }
+        footer{
+            background-color: #095c07;
+            border:#000000 2px solid;
+            height: 55px;
+            width: 99.7%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .links{
+            position: absolute;
+            top: 202px;
+            left: 0px;
+            width: 300px;
+            height: 370px;
+            background-color: #abdbe4;
+            border: #000000 2px solid;
+        }
+        #conteudo{
+            position: absolute;
+            right:61%;
+            top: 30%;
+        }
+        #rodape{
+            position: absolute;
+            bottom: 20px;
+        }
+        #cabecalho{
+            position: fixed;
+            top: -10px;
+        }
