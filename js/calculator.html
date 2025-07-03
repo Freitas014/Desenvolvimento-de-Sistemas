@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - JS</title>
+    <script>
+        function calculate(operation) {
+            var num1 = parseFloat(prompt("Digite o primeiro número:"));
+            var num2 = parseFloat(prompt("Digite o segundo número:"));
+            var result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = "Por favor, insira números válidos.";
+            } else {
+                switch (operation) {
+                    case "+":
+                        result = num1 + num2;
+                        break;
+                    case "-":
+                        result = num1 - num2;
+                        break;
+                    case "*":
+                        result = num1 * num2;
+                        break;
+                    case "/":
+                        result = num2 !== 0 ? num1 / num2 : "Divisão por zero não é permitida.";
+                        break;
+                    default:
+                        result = "Operação inválida.";
+                }
+            }
+
+            document.getElementById("demo").innerHTML = "Resultado: " + result;
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <button onclick="calculate('+')">Somar</button>
+        <button onclick="calculate('-')">Subtrair</button>
+        <button onclick="calculate('*')">Multiplicar</button>
+        <button onclick="calculate('/')">Dividir</button>
+        <p id="demo"></p>
+    </center>
+</body>
+</html>
